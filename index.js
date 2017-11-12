@@ -13,6 +13,7 @@ app.get('/listings', (req, res) => {
       city : req.query.city
     });
 
+
   client
     .search(options, 'gay')
     .then((listings) => {
