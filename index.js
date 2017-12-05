@@ -29,7 +29,7 @@ app.get('/listings', (req, res) => {
       res.send(listings);
     })
     .catch((err) => {
-      res.send("No results from craigslist");
+      res.send("No results from craigslist", err);
     });
 })
 
